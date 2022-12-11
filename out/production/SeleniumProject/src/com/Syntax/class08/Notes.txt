@@ -1,0 +1,28 @@
+Explicit wait Syntax
+
+Define the wait: WebDriverWAit wait=new WebDriverWait(driver,20);
+Condition: wait.until(ExpectedConditions.elementtobeWisible(By.xpath("")));
+
+TAble html
+
+<Thead<
+    <tr>
+         <td> Company  </td>
+         <td> Contact  </td>
+         <td> Country  </td>
+    </tr>
+</Thead>
+
+<Tbody>
+    <tr>
+        <td>Google</td>
+        <td>Maria</td>
+        <td>Germany</td>
+        <td>New value</td>
+    </tr>
+    <tr>
+        <td>Meta</td>
+        <td>Masha</td>
+        <td>Russia</td>
+    </tr>
+</Tbody>

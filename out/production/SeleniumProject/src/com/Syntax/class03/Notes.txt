@@ -1,0 +1,44 @@
+Xpath
+//input[@id='text']                                     input id="text",class="tattatatt"></input>"
+
+
+
+
+2. Xpath to identify by text
+Syntax: tagname[text()='text value']
+
+Example: a [text()='Forgotten password']
+
+3.Xpath to identify by contains method
+
+====for attributes=====
+
+tagname[contains@attribute, 'partial attribute value')]
+
+use case:
+1.if attribute values are long
+2.some part is dynamic of the attribute value id="textBoxhighlighted125" we can skip the part thsts dynamic
+
+-----for text-----
+
+tagname[contains@attribute, 'partial attribute value')]
+
+Example:
+
+a[contains(text(),'Forgot')]
+
+4.Xpath to identify by starts with method
+
+  //input[starts-with(@id,'test')]                            <input id="text is hiding with spaces"></input>"
+
+5.xpath using text()
+    //button[text(),'press']                                <button id ="5e34r">press</button>"
+      //button[contains  (text(),'pressthe')]               <button id ="5e34r">pressthebuttonbeforetoolate</button>"
+
+      using starts with
+      //button[starts-with(text(),'press')]                  <button id="5er4d">press123</button>"
+
+
+
+
+

@@ -1,0 +1,22 @@
+Alerts:
+1.Web-based(html) alerts-inspect and deal with them in a regular manner
+2.JavaScript alert-We cant  those alert. We use alert interface: when it appears we switch by d
+Alert x=river.switchTo.alert();
+We can accept(),
+dismiss(),
+sendKeys,
+getText();
+
+Frames:
+1.We deal with them by switching frames NOT directly from main page:
+driver.switchTo.frame();
+Then deal with that frame.
+Techniques to switch:
+
+1.By index;
+2.By name or ID--> the name and id in the tag "as an attribute" <iframe anme="frame1", id="abc";
+3.By WebElement:
+a.Find xpath in the frame
+b.driver findElement(xpath)
+c.driver.switchTo.frame(WebElement)
+

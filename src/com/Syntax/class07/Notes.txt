@@ -1,0 +1,44 @@
+Waits:
+Implicit wait-Waits till webElement is found
+Explicit-conditional wait, implicit it individually for every element that might need it. It needs to be clickable, visible, selectable
+Fluent-We can set polling time in these waits.Polling is  frequency with which  the Dom for a webElement
+
+Task:
+Go to gmail
+click on privacy and help
+press the button on privacy window
+
+code:
+1.driver.get("gmail.signup")
+2.click on privacy
+3.click on help button
+4.Use method driver.getWindowHandles()-will return ALL handles available on the screen /Return a stack
+5.Traverse thru the handles by Loop or iterator
+for(handle:windowHandles) {
+driver.SwitchTo.Window(handle)
+driver.getTitle();
+if Title.equals("privacy") {
+break;
+}
+}
+
+                                                        Implicit Wait
+implicit:
+driver.manage().timeouts().implicitlyWait(timeout time, Units);
+example:
+driver.manage().timeouts().implicitlyWait(20,TimeUnit.seconds);
+
+implicit wait is going to wait--> until the webelemt is found
+we need to define it only once before the start of our code an its
+
+
+WEbDriver methods:
+to count the elements:
+ driver.findElements(By.id("search")).size()
+
+ To navigate to a url:
+ get("url")
+
+
+To navigate forward by one page:
+navigate().forward()

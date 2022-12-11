@@ -1,0 +1,9 @@
+Selenium-connecting to a webDRiver to navigate thru XML page
+
+                                Whats a framework?
+Page-Object model-using classes for pages/log-in  in Cucumber, TestNG frameworks
+Create separate classes for each pages/tasks?
+If one page requires you to be logged in the first page,create a page of Log ins with common methods
+Packages/Classes examples:
+Different packages containing similar pages:Utils package with Classes.Pages-ConfigReader, ExcelReader, Constants.
+Common methods package:Admin page, Log in page etc.
